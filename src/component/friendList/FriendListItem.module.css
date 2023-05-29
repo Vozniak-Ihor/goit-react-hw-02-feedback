@@ -1,0 +1,37 @@
+.item {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+  padding-left: 40px;
+  width: 248.4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+.status {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: block;
+  height: 13px;
+  width: 13px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.avatar {
+  height: 35px;
+  width: auto;
+}
+.true {
+  background-color: green;
+}
+.false {
+  background-color: red;
+}
+.name {
+    margin-top: auto;margin-bottom: auto;
+    margin-left: 15px;
+  font-weight: 500;
+}
