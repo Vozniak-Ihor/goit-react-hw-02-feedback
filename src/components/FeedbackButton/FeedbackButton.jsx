@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class FeedbackButton extends Component {
+class FeedbackOptions extends Component {
   render() {
+    // console.log("gf");
     return (
       <>
-        <button onClick={() => this.props.onClickBtn('good')}>good</button>
-        <button onClick={() => this.props.onClickBtn('neutral')}>neutral</button>
-        <button onClick={() => this.props.onClickBtn('bad')}>bad</button>
+        <button onClick={() => this.props.onLeaveFeedback('good')}>good</button>
+        <button onClick={() => this.props.onLeaveFeedback('neutral')}>
+          neutral
+        </button>
+        <button onClick={() => this.props.onLeaveFeedback('bad')}>bad</button>
       </>
     );
   }
 }
 
-export default FeedbackButton;
+export default FeedbackOptions;
+
+FeedbackOptions.propTypes = {
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
