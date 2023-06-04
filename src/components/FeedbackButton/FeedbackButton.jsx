@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import css from './FeedbackOptions.module.css'
 
-class FeedbackOptions extends Component {
-  render() {
-    // console.log("gf");
-    return (
-      <>
-        <button onClick={() => this.props.onLeaveFeedback('good')}>good</button>
-        <button onClick={() => this.props.onLeaveFeedback('neutral')}>
-          neutral
-        </button>
-        <button onClick={() => this.props.onLeaveFeedback('bad')}>bad</button>
-      </>
-    );
-  }
-}
+const FeedbackOptions = ({ onLeaveFeedback }) => {
+  return (
+    <div>
+      <button className={css.button} onClick={() => onLeaveFeedback('good')}>good</button>
+      <button className={css.button} onClick={() => onLeaveFeedback('neutral')}>neutral</button>
+      <button className={css.button} onClick={() => onLeaveFeedback('bad')}>bad</button>
+    </div>
+  );
+};
 
 export default FeedbackOptions;
 

@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import css from './Notification.module.css'
 
-class Notification extends Component {
-  render() {
-    return (
-      <>
-        <h4>{this.props.message}</h4>
-      </>
-    );
-  }
-}
+const Notification = ({ message }) => {
+  return <h4 className={css.notification}>{message}</h4>;
+};
 
 export default Notification;
 
