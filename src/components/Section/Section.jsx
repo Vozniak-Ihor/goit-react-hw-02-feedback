@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import css from './Section.module.css'
 
+import PropTypes from 'prop-types';
+import css from './Section.module.css';
 
 const Section = ({ title, children }) => {
   return (
@@ -10,8 +10,7 @@ const Section = ({ title, children }) => {
       {children}
     </div>
   );
-}
-
+};
 
 export default Section;
 

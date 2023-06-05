@@ -23,11 +23,13 @@ export class App extends Component {
     return Math.round((this.state.good / this.countTotalFeedback()) * 100);
   };
 
-  render() {
+
+
+render() {
     return (
       <>
         <Section title={'Please leave feedback'}>
-          <FeedbackOptions onLeaveFeedback={this.onLeaveFeedback} />
+          <FeedbackOptions onLeaveFeedback={this.onLeaveFeedback} options={Object.keys(this.state)}/>
         </Section>
         <Section title={'Statistics'}>
           {this.countTotalFeedback ()=== 0 ? (

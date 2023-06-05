@@ -7,14 +7,15 @@ button {
   border-radius: 4px;
   cursor: pointer;
 
-   &:nth-child(1):hover{
+ 
+  &:nth-child(2):hover {
     background-color: #4caf50;
-   }
-   &:nth-child(2):hover{
-    background-color: rgb(250, 254, 4);
-   }
-
-   &:nth-child(3):hover{
-    background-color: rgb(252, 3, 3);
-   }
   }
+  &:nth-child(3):hover {
+    background-color: rgb(250, 254, 4);
+  }
+
+  &:nth-child(4):hover {
+    background-color: rgb(252, 3, 3);
+  }
+}
